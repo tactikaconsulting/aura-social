@@ -4,145 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aura Social | Acompañamiento Social Premium</title>
-  <meta name="description" content="Servicio profesional de acompañamiento social premium en Santiago de Chile. Discreto, elegante y bajo normas claras." />
+  <meta name="description" content="Acompañamiento social premium en Santiago de Chile. Servicio discreto, elegante y profesional." />
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0f1a;
       color: #e5e7eb;
     }
     header {
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #020617, #0f172a);
+      background: radial-gradient(circle at top, #1e1b4b, #020617);
     }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #c7d2fe;
     }
     header p {
-      max-width: 700px;
-      margin: auto;
+      max-width: 720px;
+      margin: 25px auto;
       font-size: 1.1rem;
       color: #cbd5f5;
     }
-    .cta {
-      margin-top: 30px;
-    }
     .cta a {
-      background: #6366f1;
+      background: linear-gradient(135deg, #6366f1, #818cf8);
       color: white;
-      padding: 14px 28px;
+      padding: 15px 34px;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 40px;
       font-weight: bold;
+      box-shadow: 0 10px 30px rgba(99,102,241,0.4);
     }
     section {
-      padding: 70px 20px;
-      max-width: 1100px;
+      padding: 80px 20px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
       text-align: center;
-      margin-bottom: 50px;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin-bottom: 60px;
     }
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
     }
     .card {
       background: #020617;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+      transition: transform .3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 25px;
     }
     .card h3 {
       margin-top: 0;
       color: #a5b4fc;
     }
-    .card p {
-      font-size: 0.95rem;
-      color: #cbd5f5;
+    .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #facc15;
+      margin: 10px 0;
     }
     .rules {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       text-align: center;
     }
-    .rules ul {
-      list-style: none;
-      padding: 0;
-    }
-    .rules li {
-      margin: 12px 0;
-    }
     footer {
       background: #020617;
-      padding: 40px 20px;
+      padding: 45px 20px;
       text-align: center;
       font-size: 0.9rem;
       color: #94a3b8;
-    }
-    footer a {
-      color: #818cf8;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Aura Social</h1>
-  <p>Servicio profesional de acompañamiento social premium en Santiago de Chile. Diseñado para eventos, imagen personal y situaciones específicas, bajo normas claras de respeto, confidencialidad y no intimidad.</p>
+  <div class="logo">AURA SOCIAL</div>
+  <p>Acompañamiento social premium en Santiago de Chile. Presencia, elegancia y discreción para eventos, imagen personal y situaciones especiales.</p>
   <div class="cta">
-    <a href="https://wa.me/56964295330">Solicitar información</a>
+    <a href="https://wa.me/56964295330">Contactar por WhatsApp</a>
   </div>
 </header>
 
 <section>
-  <h2>Servicios</h2>
+  <h2>Nuestros Servicios</h2>
   <div class="services">
+
     <div class="card">
-      <h3>Cita Social</h3>
-      <p>Acompañamiento individual para café, paseo o comida. Conversación, presencia y compañía social.</p>
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Cita Social">
+      <div class="card-content">
+        <h3>Cita Social</h3>
+        <p>Acompañamiento para café, paseo o comida. Conversación, presencia y compañía.</p>
+        <div class="price">$70.000 CLP</div>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Imagen en Redes Sociales</h3>
-      <p>Presencia planificada para fotografías y publicaciones que refuercen tu imagen social.</p>
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Imagen en redes">
+      <div class="card-content">
+        <h3>Imagen en Redes Sociales</h3>
+        <p>Sesión planificada para fortalecer imagen social y presencia digital.</p>
+        <div class="price">$150.000 CLP</div>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Acompañamiento a Eventos</h3>
-      <p>Presencia profesional como pareja o acompañante en eventos sociales o corporativos.</p>
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Eventos">
+      <div class="card-content">
+        <h3>Acompañamiento a Eventos</h3>
+        <p>Cenas, fiestas de empresa, matrimonios y eventos familiares.</p>
+        <div class="price">Desde $220.000 CLP</div>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Pack Presencia Continua</h3>
-      <p>Acompañamiento social por períodos definidos, con encuentros y mensajería acordada.</p>
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Presencia continua">
+      <div class="card-content">
+        <h3>Pack Presencia Continua</h3>
+        <p>Acompañamiento por períodos definidos con encuentros y mensajería.</p>
+        <div class="price">Desde $320.000 CLP</div>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Entrenamiento Social</h3>
-      <p>Simulación de citas y feedback profesional para mejorar habilidades sociales.</p>
+      <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7" alt="Entrenamiento social">
+      <div class="card-content">
+        <h3>Entrenamiento Social</h3>
+        <p>Simulación de citas y feedback profesional personalizado.</p>
+        <div class="price">$220.000 CLP</div>
+      </div>
     </div>
+
   </div>
 </section>
 
 <section class="rules">
   <h2>Normas del Servicio</h2>
-  <ul>
-    <li>✔ Servicio estrictamente social y no íntimo</li>
-    <li>✔ Confidencialidad garantizada</li>
-    <li>✔ Servicios previamente acordados</li>
-    <li>✔ Pago anticipado</li>
-    <li>✔ Derecho a cancelación ante incumplimientos</li>
-  </ul>
+  <p>✔ Servicio estrictamente social · ✔ Confidencialidad absoluta · ✔ Pago anticipado · ❌ No servicios íntimos</p>
 </section>
 
 <footer>
-  <p>Aura Social ©️ 2026 · Santiago de Chile</p>
-  <p>Contacto directo vía <a href="https://wa.me/56964295330">WhatsApp</a></p>
+  <p>Aura Social © 2026 · Santiago de Chile</p>
+  <p>Contacto directo: WhatsApp +56 9 6429 5330</p>
 </footer>
 
 </body>
